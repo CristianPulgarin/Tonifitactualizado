@@ -29,8 +29,8 @@ function Footer() {
             <div className="row justify-content-center align-items-center mb-4">
               <div className="col-12 col-md-4 text-center mb-3 mb-md-0">
                 <img
-                  src={datosFooter.logo.src}
-                  alt={datosFooter.logo.alt}
+                  src="../public/ToniFit.png"
+                  alt="tonifit"
                   style={{
                     borderRadius: "20%",
                     width: "180px",
@@ -45,7 +45,7 @@ function Footer() {
                     color: "#bbb",
                   }}
                 >
-                  {datosFooter.copyright}
+
                 </p>
               </div>
 
