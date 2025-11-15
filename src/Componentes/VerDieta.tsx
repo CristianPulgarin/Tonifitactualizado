@@ -15,22 +15,26 @@ const VerDieta = () => {
 
   // =============== Obtener usuarios y dietas ===============
   useEffect(() => {
-    const unsubscribeUsers = firebase.db.collection("users").onSnapshot((snapshot) => {
-      const userList = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setUsers(userList);
-    });
+    const unsubscribeUsers = firebase.db
+      .collection("users")
+      .onSnapshot((snapshot) => {
+        const userList = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setUsers(userList);
+      });
 
-    const unsubscribeDietas = firebase.db.collection("dieta").onSnapshot((snapshot) => {
-      const dietaList = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setAvailableDietas(dietaList);
-      setClass(dietaList);
-    });
+    const unsubscribeDietas = firebase.db
+      .collection("dieta")
+      .onSnapshot((snapshot) => {
+        const dietaList = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setAvailableDietas(dietaList);
+        setClass(dietaList);
+      });
 
     return () => {
       unsubscribeUsers();
@@ -109,22 +113,23 @@ const VerDieta = () => {
   // =============== Filtro de dietas asignadas ===============
   const filteredAssignedDietas = assignedDietas.filter((assigned) => {
     const user = users.find((u) => u.id === assigned.userId);
-    return user && user.userName.toLowerCase().includes(searchUserTerm.toLowerCase());
+    return (
+      user && user.userName.toLowerCase().includes(searchUserTerm.toLowerCase())
+    );
   });
 
   return (
     <div className="pt-24 min-h-screen pt-24 px-6 pb-10 bg-gradient-to-b text-white from-[#0b1120] to-[#000]">
-
-
       <div className="rounded-2xl bg-[#0f172a] border border-blue-800/40 shadow-xl p-6 text-center">
-        <h2 className="text-4xl font-extrabold tracking-wide 
-          bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
+        <h2
+          className="text-4xl font-extrabold tracking-wide 
+          bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent"
+        >
           VER Y GESTIONAR DIETAS
         </h2>
       </div>
 
       <div className="mt-10 bg-[#0f172a] border border-blue-900/40 shadow-2xl rounded-3xl p-10">
-
         <h2 className="text-3xl font-bold text-center text-blue-300 mb-4 tracking-wide">
           Dietas Asignadas
         </h2>
@@ -150,28 +155,22 @@ const VerDieta = () => {
                 >
                   <h3 className="text-xl font-semibold text-blue-300">
                     Dieta:{" "}
-                    {
-                      classs.find((c) => c.id === assigned.DietaId)?.dieta ||
-                      "Dieta no encontrada"
-                    }
+                    {classs.find((c) => c.id === assigned.DietaId)?.dieta ||
+                      "Dieta no encontrada"}
                   </h3>
 
                   <p className="text-gray-300 mt-1">
                     <strong className="text-blue-400">Cliente:</strong>{" "}
-                    {
-                      (function () {
-                        const user = users.find((u) => u.id === assigned.userId);
-                        return user ? user.userName : "Usuario no encontrado";
-                      })()
-                    }
+                    {(function () {
+                      const user = users.find((u) => u.id === assigned.userId);
+                      return user ? user.userName : "Usuario no encontrado";
+                    })()}
                   </p>
 
                   <p className="text-gray-300">
                     <strong className="text-blue-400">Horario:</strong>{" "}
-                    {
-                      classs.find((c) => c.id === assigned.DietaId)?.horario ||
-                      "Horario no encontrado"
-                    }
+                    {classs.find((c) => c.id === assigned.DietaId)?.horario ||
+                      "Horario no encontrado"}
                   </p>
 
                   <div className="mt-4">
@@ -188,7 +187,6 @@ const VerDieta = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

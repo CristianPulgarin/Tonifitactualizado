@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
-import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 
-function IniciarSesion({ setUserRole }:any) {
+function IniciarSesion({ setUserRole }: any) {
   const firestore = getFirestore();
   const navigate = useNavigate();
   const [loginError, setLoginError] = useState("");
@@ -51,16 +57,12 @@ function IniciarSesion({ setUserRole }:any) {
 
   return (
     <div className="min-h-screen top-5 flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 px-4">
-      
       <div className="w-full max-w-lg bg-gray-900/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-700 p-10">
-        
         <h1 className="text-4xl font-extrabold text-center text-white tracking-wide drop-shadow mb-8">
           INICIAR SESIÓN
         </h1>
 
         <form className="space-y-7" onSubmit={formik.handleSubmit}>
-          
-
           <div className="flex flex-col gap-2">
             <label
               htmlFor="email"
@@ -82,7 +84,6 @@ function IniciarSesion({ setUserRole }:any) {
               onChange={formik.handleChange}
             />
           </div>
-
 
           <div className="flex flex-col gap-2">
             <label
@@ -106,13 +107,11 @@ function IniciarSesion({ setUserRole }:any) {
             />
           </div>
 
-
           {loginError && (
             <p className="text-center text-red-400 font-semibold text-sm tracking-wide">
               {loginError}
             </p>
           )}
-
 
           <button
             type="submit"
@@ -122,7 +121,6 @@ function IniciarSesion({ setUserRole }:any) {
           >
             INGRESAR
           </button>
-
 
           <div className="pt-2 text-center">
             <Link

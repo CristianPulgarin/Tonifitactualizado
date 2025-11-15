@@ -27,7 +27,10 @@ function Actualizar() {
           const updatedData = { ...values };
           if (!values.password) delete updatedData.password;
 
-          await firebase.db.collection("users").doc(user.id).update(updatedData);
+          await firebase.db
+            .collection("users")
+            .doc(user.id)
+            .update(updatedData);
           window.alert("Datos actualizados exitosamente");
         }
       } catch (e) {
@@ -35,7 +38,6 @@ function Actualizar() {
       }
     },
   });
-
 
   const handleSearchUser = async () => {
     try {
@@ -58,13 +60,10 @@ function Actualizar() {
 
   return (
     <div className="min-h-screen flex items-center justify-center pt-24 bg-gradient-to-br from-black via-gray-900 to-gray-800 px-4">
-      
       <div className="w-full max-w-3xl bg-gray-900/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-700 p-10">
-
         <h1 className="text-4xl font-extrabold text-center text-white tracking-wide drop-shadow mb-10">
           MODIFICAR DATOS DEL USUARIO
         </h1>
-
 
         <div className="space-y-4 mb-10">
           <label className="text-lg font-bold text-gray-200 tracking-wide">
@@ -94,10 +93,8 @@ function Actualizar() {
           </button>
         </div>
 
-
         {user && (
           <form className="space-y-7" onSubmit={formik.handleSubmit}>
-            
             {["name", "cc", "edad", "estatura", "email"].map((field) => (
               <div key={field} className="flex flex-col gap-2">
                 <label
@@ -127,7 +124,6 @@ function Actualizar() {
                 />
               </div>
             ))}
-
 
             <div className="flex flex-col gap-2">
               <label className="text-lg font-bold text-gray-200 tracking-wide">

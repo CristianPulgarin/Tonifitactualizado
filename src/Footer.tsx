@@ -44,9 +44,7 @@ function Footer() {
                     fontSize: "0.9rem",
                     color: "#bbb",
                   }}
-                >
-
-                </p>
+                ></p>
               </div>
 
               <div className="col-12 col-md-8">

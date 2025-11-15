@@ -106,7 +106,9 @@ const Assign = () => {
       return (
         assignedTraining.available &&
         (assignedClass?.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          assignedUser?.userName.toLowerCase().includes(searchTerm.toLowerCase()))
+          assignedUser?.userName
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()))
       );
     }
   );
@@ -114,8 +116,6 @@ const Assign = () => {
   return (
     <>
       <div className="flex flex-col px-4 pt-24 pb-10 bg-[#0b1120] min-h-screen">
-
-
         <div className="backdrop-blur-md bg-white/10 p-6 rounded-xl shadow-xl border border-white/10 mx-auto w-full max-w-3xl">
           <h2 className="text-3xl text-center font-bold text-white tracking-wide">
             ASIGNAR RUTINAS

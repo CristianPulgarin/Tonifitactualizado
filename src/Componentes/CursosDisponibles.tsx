@@ -4,11 +4,11 @@ import CursoLista from "../Cursos/CursoLista";
 import { CursoProvider } from "../Providers/CursoProvider";
 
 export default function CursosDisponibles() {
-    return (
-        <>
-            <CursoProvider>
-                <CursoLista/>
-            </CursoProvider> 
-        </>
-    )
+  return (
+    <>
+      <CursoProvider>
+        <CursoLista />
+      </CursoProvider>
+    </>
+  );
 }

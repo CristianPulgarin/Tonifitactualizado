@@ -11,13 +11,15 @@ const Bloquear = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const unsubscribe = firebase.db.collection("users").onSnapshot((snapshot) => {
-      const userList = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setUsers(userList);
-    });
+    const unsubscribe = firebase.db
+      .collection("users")
+      .onSnapshot((snapshot) => {
+        const userList = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setUsers(userList);
+      });
 
     return () => unsubscribe();
   }, [firebase]);
@@ -55,7 +57,6 @@ const Bloquear = () => {
           BLOQUEO DE USUARIOS
         </h1>
 
-
         <div className="mb-6">
           <input
             type="text"
@@ -80,9 +81,13 @@ const Bloquear = () => {
 
               <p className="text-lg mb-2">
                 {user.blocked ? (
-                  <span className="text-red-400 font-semibold">🔒 Bloqueado</span>
+                  <span className="text-red-400 font-semibold">
+                    🔒 Bloqueado
+                  </span>
                 ) : (
-                  <span className="text-green-400 font-semibold">✔️ Activo</span>
+                  <span className="text-green-400 font-semibold">
+                    ✔️ Activo
+                  </span>
                 )}
               </p>
 
