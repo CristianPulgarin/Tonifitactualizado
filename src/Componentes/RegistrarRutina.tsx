@@ -75,7 +75,7 @@ function RegistrarRutina() {
 
       <form className="space-y-6" onSubmit={formik.handleSubmit}>
         
-        {/* Nombre */}
+
         <div>
           <label htmlFor="name" className="block text-lg font-semibold text-blue-300 mb-2">
             Nombre de la rutina
@@ -93,7 +93,7 @@ function RegistrarRutina() {
           />
         </div>
 
-        {/* Descripción */}
+
         <div>
           <label htmlFor="description" className="block text-lg font-semibold text-blue-300 mb-2">
             Descripción de la rutina
@@ -110,7 +110,7 @@ function RegistrarRutina() {
           />
         </div>
 
-        {/* Categoría */}
+
         <div>
           <label htmlFor="category" className="block text-lg font-semibold text-blue-300 mb-2">
             Tipo de ejercicio
@@ -134,7 +134,7 @@ function RegistrarRutina() {
           </select>
         </div>
 
-        {/* Guía */}
+
         <div>
           <label htmlFor="guia" className="block text-lg font-semibold text-blue-300 mb-2">
             Link guía
@@ -158,7 +158,7 @@ function RegistrarRutina() {
           </select>
         </div>
 
-        {/* Día */}
+
         <div>
           <label htmlFor="day" className="block text-lg font-semibold text-blue-300 mb-2">
             Día disponible
@@ -182,7 +182,7 @@ function RegistrarRutina() {
           </select>
         </div>
 
-        {/* Hora */}
+
         <div>
           <label htmlFor="startHour" className="block text-lg font-semibold text-blue-300 mb-2">
             Hora de inicio
@@ -210,7 +210,7 @@ function RegistrarRutina() {
           </select>
         </div>
 
-        {/* Botón */}
+
         <button
           type="submit"
           className="w-full py-3 mt-4 bg-blue-600 hover:bg-blue-700 transition-all font-bold text-white 

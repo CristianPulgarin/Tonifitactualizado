@@ -39,7 +39,7 @@ const Planes = () => {
       pt-28 pb-16 px-4
     ">
       
-      {/* CONTENEDOR EN GRID OCUPANDO TODO EL ANCHO */}
+
       <div className="
         max-w-[1400px] mx-auto
         grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
@@ -60,7 +60,7 @@ const Planes = () => {
               transition-all duration-300
             "
           >
-            {/* TÍTULO */}
+
             <h1 className="text-3xl font-extrabold text-center text-white tracking-wide drop-shadow-lg">
               {plan.titulo}
             </h1>
@@ -69,7 +69,7 @@ const Planes = () => {
               Beneficios
             </h2>
 
-            {/* LISTA */}
+
             <ul className="
               w-full mx-auto mt-3 rounded-xl py-4
               bg-[#142037] border border-blue-900/30
@@ -87,7 +87,7 @@ const Planes = () => {
                 </li>
               ))}
 
-              {/* BOTÓN */}
+
               <button
                 className="
                   mt-4 w-[80%] py-2 text-xl font-bold rounded-xl

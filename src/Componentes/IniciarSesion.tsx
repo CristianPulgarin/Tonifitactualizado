@@ -52,18 +52,15 @@ function IniciarSesion({ setUserRole }:any) {
   return (
     <div className="min-h-screen top-5 flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 px-4">
       
-      {/* CARD */}
       <div className="w-full max-w-lg bg-gray-900/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-700 p-10">
         
-        {/* TÍTULO */}
         <h1 className="text-4xl font-extrabold text-center text-white tracking-wide drop-shadow mb-8">
           INICIAR SESIÓN
         </h1>
 
-        {/* FORM */}
         <form className="space-y-7" onSubmit={formik.handleSubmit}>
           
-          {/* EMAIL */}
+
           <div className="flex flex-col gap-2">
             <label
               htmlFor="email"
@@ -86,7 +83,7 @@ function IniciarSesion({ setUserRole }:any) {
             />
           </div>
 
-          {/* PASSWORD */}
+
           <div className="flex flex-col gap-2">
             <label
               htmlFor="password"
@@ -109,14 +106,14 @@ function IniciarSesion({ setUserRole }:any) {
             />
           </div>
 
-          {/* ERROR */}
+
           {loginError && (
             <p className="text-center text-red-400 font-semibold text-sm tracking-wide">
               {loginError}
             </p>
           )}
 
-          {/* BOTÓN */}
+
           <button
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white 
@@ -126,7 +123,7 @@ function IniciarSesion({ setUserRole }:any) {
             INGRESAR
           </button>
 
-          {/* LINK */}
+
           <div className="pt-2 text-center">
             <Link
               to="/Actualizar"

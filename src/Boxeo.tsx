@@ -33,7 +33,7 @@ const Boxeo = () => {
     <>
       <div className="container-fluid bg-dark text-white min-vh-100 py-4">
         <div className="row">
-          {/* Barra lateral izquierda */}
+
           <aside className="col-12 col-md-3 border-end border-secondary">
             <h3 className="text-center mt-4 mb-3 fw-bold text-uppercase">
               Cursos de Boxeo
@@ -54,7 +54,7 @@ const Boxeo = () => {
             </div>
           </aside>
 
-          {/* Contenido principal */}
+
           <main className="col-12 col-md-9 px-4 mt-4">
             <section className="mb-5">
               <div className="row align-items-center">
@@ -81,7 +81,7 @@ const Boxeo = () => {
               </div>
             </section>
 
-            {/* Segunda sección: horarios y torneos */}
+
             <section>
               <div className="row align-items-center">
                 <div className="col-lg-8">

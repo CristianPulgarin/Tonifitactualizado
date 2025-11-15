@@ -35,7 +35,7 @@ const Karate = () => {
     <>
       <div className="container-fluid bg-dark text-white min-vh-100 py-4">
         <div className="row">
-          {/* Barra lateral */}
+
           <aside className="col-12 col-md-3 border-end border-secondary">
             <h3 className="text-center mt-4 mb-3 fw-bold text-uppercase">
               Cursos de Karate
@@ -56,9 +56,8 @@ const Karate = () => {
             </div>
           </aside>
 
-          {/* Contenido principal */}
           <main className="col-12 col-md-9 px-4 mt-4">
-            {/* Sección principal */}
+            
             <section className="mb-5">
               <div className="row align-items-center">
                 <div className="col-lg-4 text-center">
@@ -84,7 +83,7 @@ const Karate = () => {
               </div>
             </section>
 
-            {/* Horarios y torneos */}
+
             <section>
               <div className="row align-items-center">
                 <div className="col-lg-8">

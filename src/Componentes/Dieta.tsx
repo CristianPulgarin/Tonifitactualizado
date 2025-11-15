@@ -5,10 +5,9 @@ import { useFormik } from "formik";
 import {FirebaseContext} from "../firebase";
 
 function Dieta() {
-  //Hooks y valriables
   const { firebase } = useContext(FirebaseContext);
 
-  //Inicialización y validaciones
+
   const formik2 = useFormik({
     initialValues: {
       
@@ -22,7 +21,7 @@ function Dieta() {
 
     onSubmit: async (values) => {
       try {
-        // Verifica si ya existe un usuario con el mismo nombre de usuario
+
         
 
         
@@ -43,7 +42,7 @@ function Dieta() {
       </h1>
 
       <form className="space-y-6" onSubmit={formik2.handleSubmit}>
-        {/* Nombre dieta */}
+        
         <div>
           <label
             htmlFor="dieta"
@@ -62,7 +61,7 @@ function Dieta() {
           />
         </div>
 
-        {/* Cantidad */}
+
         <div>
           <label
             htmlFor="cantidad"
@@ -81,7 +80,7 @@ function Dieta() {
           />
         </div>
 
-        {/* Suplemento */}
+
         <div>
           <label
             htmlFor="suplemento"
@@ -100,7 +99,7 @@ function Dieta() {
           />
         </div>
 
-        {/* Horario */}
+
         <div>
           <label
             htmlFor="horario"
@@ -119,7 +118,7 @@ function Dieta() {
           />
         </div>
 
-        {/* Botón */}
+
         <div className="pt-4">
           <button
             type="submit"

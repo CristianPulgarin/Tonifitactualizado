@@ -115,14 +115,13 @@ const Assign = () => {
     <>
       <div className="flex flex-col px-4 pt-24 pb-10 bg-[#0b1120] min-h-screen">
 
-        {/* Título principal */}
+
         <div className="backdrop-blur-md bg-white/10 p-6 rounded-xl shadow-xl border border-white/10 mx-auto w-full max-w-3xl">
           <h2 className="text-3xl text-center font-bold text-white tracking-wide">
             ASIGNAR RUTINAS
           </h2>
         </div>
 
-        {/* Selector de usuario */}
         <div className="backdrop-blur-md bg-white/10 mt-6 p-6 rounded-xl shadow-xl border border-white/10 mx-auto w-full max-w-3xl">
           <label className="text-xl text-blue-300 block font-semibold text-center mb-2">
             Datos del Usuario
@@ -143,7 +142,6 @@ const Assign = () => {
           </select>
         </div>
 
-        {/* Selector entrenamiento */}
         <div className="backdrop-blur-md bg-white/10 mt-4 p-6 rounded-xl shadow-xl border border-white/10 mx-auto w-full max-w-3xl">
           <label className="text-xl text-blue-300 block font-semibold text-center mb-2">
             Entrenamientos disponibles
@@ -167,7 +165,6 @@ const Assign = () => {
           </div>
         </div>
 
-        {/* BUSCADOR */}
         <div className="backdrop-blur-md bg-white/10 mt-8 p-8 rounded-xl shadow-xl border border-white/10 mx-auto w-full max-w-4xl">
           <h2 className="text-2xl font-bold text-center text-blue-300 mb-4">
             Clases Asignadas
@@ -181,7 +178,6 @@ const Assign = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
 
-          {/* Lista asignadas */}
           <div className="space-y-4">
             {filteredAssignedTrainings.map((assignedTraining) => {
               const assignedClass = classs.find(

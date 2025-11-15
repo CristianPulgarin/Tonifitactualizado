@@ -55,7 +55,7 @@ const Bloquear = () => {
           BLOQUEO DE USUARIOS
         </h1>
 
-        {/* BUSCADOR */}
+
         <div className="mb-6">
           <input
             type="text"
@@ -66,7 +66,6 @@ const Bloquear = () => {
           />
         </div>
 
-        {/* LISTA DE USUARIOS */}
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           {filteredUsers.map((user) => (
             <div
@@ -102,7 +101,6 @@ const Bloquear = () => {
         </div>
       </div>
 
-      {/* MODAL */}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}

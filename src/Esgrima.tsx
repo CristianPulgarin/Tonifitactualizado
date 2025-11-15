@@ -54,9 +54,8 @@ const Esgrima = () => {
             </div>
           </aside>
 
-          {/* Contenido principal */}
           <main className="col-12 col-md-9 px-4 mt-4">
-            {/* Sección principal */}
+            
             <section className="mb-5">
               <div className="row align-items-center">
                 <div className="col-lg-4 text-center">
@@ -82,7 +81,7 @@ const Esgrima = () => {
               </div>
             </section>
 
-            {/* Horarios y torneos */}
+
             <section>
               <div className="row align-items-center">
                 <div className="col-lg-8">

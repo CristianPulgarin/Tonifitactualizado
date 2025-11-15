@@ -85,17 +85,14 @@ const AssignDieta = () => {
     return user && user.userName.toLowerCase().includes(searchUserTerm.toLowerCase());
   });
 
-  // --- UI ---
   return (
     <div className="flex flex-col pt-24 bg-gradient-to-b from-[#0a1124] to-[#000000] min-h-screen p-6">
       
-      {/* Contenedor principal */}
       <div className="bg-[#0d1b33] p-8 rounded-xl shadow-xl border border-blue-900/40">
         <h2 className="text-4xl font-bold text-center text-white drop-shadow mb-6">
           ASIGNAR DIETAS
         </h2>
 
-        {/* Usuario */}
         <div className="mb-6">
           <label className="text-xl text-blue-200 font-semibold block text-center">
             Usuario
@@ -119,7 +116,6 @@ const AssignDieta = () => {
           </div>
         </div>
 
-        {/* Dietas */}
         <div className="mb-6">
           <label className="text-xl text-blue-200 font-semibold block text-center">
             Dietas disponibles
@@ -139,7 +135,6 @@ const AssignDieta = () => {
           </div>
         </div>
 
-        {/* Botón asignar */}
         <div className="flex justify-center">
           <button
             onClick={assignDieta}
@@ -151,7 +146,7 @@ const AssignDieta = () => {
         </div>
       </div>
 
-      {/* Dietas asignadas */}
+
       <div className="bg-[#0d1b33] p-8 rounded-xl shadow-xl border border-blue-900/40 mt-8">
         <h2 className="text-3xl font-bold text-white text-center drop-shadow mb-4">
           Dietas asignadas

@@ -8,7 +8,6 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
     <nav className="w-full bg-black text-white shadow-md fixed top-0 left-0 z-50 h-20 flex items-center">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 w-full">
 
-        {/* Logo */}
         <Link to="/" onClick={() => setOpen(false)}>
           <img
             src="/ToniFit.png"
@@ -17,14 +16,13 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
           />
         </Link>
 
-        {/* CORREO EN DESKTOP */}
         {userEmail && (
           <span className="hidden lg:block text-blue-400 font-semibold text-lg">
             {userEmail}
           </span>
         )}
 
-        {/* Hamburguesa */}
+
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden text-3xl focus:outline-none"
@@ -32,7 +30,7 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
           ☰
         </button>
 
-        {/* MENÚ */}
+
         <ul
           className={`
             flex flex-col lg:flex-row gap-6 lg:gap-10 
@@ -42,14 +40,14 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
           `}
         >
 
-          {/* CORREO EN MOBILE */}
+
           {userEmail && (
             <li className="lg:hidden text-blue-400 font-semibold border-b border-gray-700 pb-2">
               {userEmail}
             </li>
           )}
 
-          {/* ----- SI ES ENTRENADOR ----- */}
+
           {userRole === "entrenador" && (
             <>
               <li><Link className="text-white no-underline! hover:underline!" to="/" onClick={() => setOpen(false)}>HOME</Link></li>
@@ -64,7 +62,7 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
             </>
           )}
 
-          {/* ----- SI ES USUARIO ----- */}
+
           {userRole === "usuario" && (
             <>
               <li><Link className="text-white no-underline! hover:underline!" to="/" onClick={() => setOpen(false)}>HOME</Link></li>
@@ -76,7 +74,7 @@ export default function BarraDeNavegacion({ userRole, userEmail }: any) {
             </>
           )}
 
-          {/* ----- SIN INICIAR SESIÓN ----- */}
+
           {!userRole && (
             <>
               <li><Link className="text-white no-underline! hover:underline!" to="/" onClick={() => setOpen(false)}>HOME</Link></li>

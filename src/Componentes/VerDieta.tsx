@@ -115,7 +115,7 @@ const VerDieta = () => {
   return (
     <div className="pt-24 min-h-screen pt-24 px-6 pb-10 bg-gradient-to-b text-white from-[#0b1120] to-[#000]">
 
-      {/* ------------ Header ------------ */}
+
       <div className="rounded-2xl bg-[#0f172a] border border-blue-800/40 shadow-xl p-6 text-center">
         <h2 className="text-4xl font-extrabold tracking-wide 
           bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent">
@@ -123,14 +123,12 @@ const VerDieta = () => {
         </h2>
       </div>
 
-      {/* ------------ Dietas asignadas ------------ */}
       <div className="mt-10 bg-[#0f172a] border border-blue-900/40 shadow-2xl rounded-3xl p-10">
 
         <h2 className="text-3xl font-bold text-center text-blue-300 mb-4 tracking-wide">
           Dietas Asignadas
         </h2>
 
-        {/* Campo de búsqueda */}
         <div className="flex justify-center mb-6">
           <input
             type="text"
@@ -142,7 +140,6 @@ const VerDieta = () => {
           />
         </div>
 
-        {/* Listado */}
         <div className="space-y-6">
           {filteredAssignedDietas.map((assigned) => (
             <div key={assigned.id}>

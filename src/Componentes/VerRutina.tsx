@@ -96,7 +96,6 @@ const VerRutina = () => {
       </option>
     ));
 
-  // Filtrado de entrenamientos asignados basado en el término de búsqueda
   const filteredAssignedTrainings = assignedTrainings.filter((assignedTraining) => {
     const assignedClass = classs.find((clas) => clas.id === assignedTraining.trainingId);
     const assignedUser = users.find((user) => user.id === assignedTraining.userId);
@@ -111,14 +110,12 @@ const VerRutina = () => {
   return (
   <div className="min-h-screen pt-24 w-full bg-gradient-to-b from-[#0a0f1f] to-[#00040a] text-white py-10 px-4">
 
-    {/* TÍTULO */}
     <div className="max-w-4xl mx-auto bg-[#0f1629] border border-blue-800/40 shadow-xl rounded-2xl p-6 mb-6">
       <h2 className="text-4xl font-bold text-center tracking-wide text-blue-300 drop-shadow-lg">
         RUTINAS
       </h2>
     </div>
 
-    {/* BUSCADOR */}
     <div className="max-w-4xl mx-auto bg-[#0f1629] border border-blue-900/40 p-6 rounded-2xl shadow-xl">
       <h3 className="text-2xl font-bold text-blue-200 mb-2 text-center uppercase">
         Clases Asignadas
@@ -132,7 +129,6 @@ const VerRutina = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
 
-      {/* LISTA DE CARDS */}
       <div className="space-y-6 max-h-[600px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-transparent">
 
         {filteredAssignedTrainings.map((assignedTraining) => {
