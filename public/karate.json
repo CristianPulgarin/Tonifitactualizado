@@ -1,0 +1,33 @@
+{
+    "tituloPagina": "Gimnasios Fit Sport",
+    "meta": {
+      "descripcion": "Gimnasio Pelayogm",
+      "autor": "Pelayogm"
+    },
+    "favicon": "src/foto_cyndaquil.ico",
+    "cursos": [
+      { "nombre": "Esgrima", "href": "curso_esgrima.html" },
+      { "nombre": "Boxeo", "href": "curso_Boxeo.html" },
+      { "nombre": "Natación", "href": "curso_Natacion.html" },
+      { "nombre": "Karate", "href": "curso_Karate.html" }
+    ],
+    "contenidoPrincipal": {
+      "imagenPrincipal": "/Cursos/Karate.jpg",
+      "titulo": "CURSO DE KARATE",
+      "descripcion": [
+        "¿Quieres ser como Jackie-Chan?",
+        "Pues si la respuesta es Sí, apuntate al curso de Boxeo, hay varias categorías para la gente: Cinturon Marron, Amarillo y Negro.",
+        "Con practicas, ejercicios y profesores especializados para cada nivel."
+      ],
+      "horario": [
+        "El curso de Karate actualmente está disponible de Martes, Jueves y los Viernes, de 14:00 a 20:00 en la planta intermedia del gimnasio.",
+        "Cada sesión es de una hora y media intercalada con descansos de media hora."
+      ],
+      "torneos": [
+        "Los más talentosos que haya en las clases podrán hacer torneos entre clases e incluso en algunos casos regionales, y también torneos entre Gimnasios.",
+        "Te divertirás mucho, conocerás gente y sabrás defenderte, hay mucho mangui suelto..."
+      ],
+      "imagenTorneo": "/Cursos/Torneo_Karate.jpg"
+    }
+  }
+  

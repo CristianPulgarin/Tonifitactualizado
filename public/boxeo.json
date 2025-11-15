@@ -1,0 +1,31 @@
+{
+  "tituloPagina": "Gimnasios Fit Sport",
+  "meta": {
+    "descripcion": "Gimnasio Pelayogm",
+    "autor": "Pelayogm"
+  },
+  "cursos": [
+    { "nombre": "Esgrima", "href": "asdasd" },
+    { "nombre": "Boxeo", "href": "dasdasd" },
+    { "nombre": "Natación", "href": "dasdasd" },
+    { "nombre": "Karate", "href": "asdasd" }
+  ],
+  "contenidoPrincipal": {
+    "imagenPrincipal": "/Cursos/Boxeo.jpg",
+    "titulo": "CURSO DE BOXEO",
+    "descripcion": [
+      "¿Quieres saber defenderte?",
+      "Pues si la respuesta es Sí, apúntate al curso de Boxeo, hay varias categorías para la gente: Principiante, Amateur y Experto.",
+      "Con prácticas, ejercicios y profesores especializados para cada nivel."
+    ],
+    "horario": [
+      "El curso de boxeo actualmente está disponible los Lunes, Martes y Viernes, de 14:00 a 20:00 en la planta baja del gimnasio.",
+      "Cada sesión es de una hora y media intercalada con descansos de media hora."
+    ],
+    "torneos": [
+      "Los más talentosos que haya en las clases podrán hacer torneos entre clases e incluso en algunos casos, torneos regionales y también entre gimnasios.",
+      "Te divertirás mucho, conocerás gente y sabrás defenderte. Igual con mucho entreno hasta partes una tabla de un golpe. Dale una oportunidad."
+    ],
+    "imagenTorneo": "/Cursos/Torneo_Boxeo.jpeg"
+  }
+}

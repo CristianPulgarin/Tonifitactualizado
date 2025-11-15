@@ -1,0 +1,31 @@
+{
+  "tituloPagina": "Gimnasios Fit Sport",
+  "meta": {
+    "descripcion": "Gimnasio Pelayogm",
+    "autor": "Pelayogm"
+  },
+  "cursos": [
+    { "nombre": "Esgrima", "href": "curso_esgrima.html" },
+    { "nombre": "Boxeo", "href": "curso_Boxeo.html" },
+    { "nombre": "Natación", "href": "curso_Natacion.html" },
+    { "nombre": "Karate", "href": "curso_Karate.html" }
+  ],
+  "contenidoPrincipal": {
+    "imagenPrincipal": "/Cursos/Natacion.jpg",
+    "titulo": "CURSO DE NATACIÓN",
+    "descripcion": [
+      "¿Quieres nadar como pez en el agua?",
+      "Si la respuesta es Sí, apúntate al curso de Natación. Hay varias categorías: Principiante, Amateur y Experto.",
+      "Con prácticas, ejercicios y profesores especializados para cada nivel."
+    ],
+    "horario": [
+      "El curso de Natación actualmente está disponible los Lunes, Miércoles y Viernes, de 12:00 a 20:00 en la piscina del gimnasio.",
+      "Cada sesión es de una hora y media intercalada con descansos de media hora."
+    ],
+    "torneos": [
+      "Los más talentosos que haya en las clases podrán participar en competiciones regionales, practicar buceo e incluso competir entre Gimnasios.",
+      "Te divertirás mucho, mejorarás tu resistencia física y aprenderás técnicas avanzadas de nado."
+    ],
+    "imagenTorneo": "/Cursos/Natacion_Campeonato.jpg"
+  }
+}

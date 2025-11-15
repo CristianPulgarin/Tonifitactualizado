@@ -1,0 +1,40 @@
+{
+  "tituloPagina": "Gimnasios Fit Sport",
+  "meta": {
+    "descripcion": "Gimnasio Pelayogm",
+    "autor": "Pelayogm"
+  },
+  "cursos": [
+    {
+      "nombre": "Esgrima",
+      "href": "curso_esgrima.html"
+    },
+    {
+      "nombre": "Boxeo",
+      "href": "curso_Boxeo.html"
+    },
+    {
+      "nombre": "Natación",
+      "href": "curso_Natacion.html"
+    },
+    {
+      "nombre": "Karate",
+      "href": "curso_Karate.html"
+    }
+  ],
+  "contenidoPrincipal": {
+    "imagenPrincipal": "/Cursos/Esgrima.jpg",
+    "titulo": "CURSO DE ESGRIMA",
+    "descripcion": [
+      "En nuestro gimnasio tenemos como novedad el curso de esgrima. ¡Anímate a venir, las plazas son limitadas!"
+    ],
+    "horario": [
+      "El curso de esgrima actualmente es los lunes, jueves y sábados, de 16:00 a 18:00 en la planta baja del gimnasio."
+    ],
+    "torneos": [
+      "Los más talentosos que haya en las clases podrán aspirar a participar en la liga Española de Esgrima o incluso en campeonatos mundiales.",
+      "Te divertirás mucho, conocerás gente increíble y te pondrás en forma."
+    ],
+    "imagenTorneo": "/Cursos/Campeonato_Esgrima.jpg"
+  }
+}

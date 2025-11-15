@@ -1,0 +1,19 @@
+.bg-black {
+  background-color: black;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.logoGimnasio {
+  border-radius: 15%;
+  width: 120px;
+  height: 70px;
+}
+
+footer {
+  position: relative;
+  top: 2vw;
+}

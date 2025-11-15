@@ -1,0 +1,25 @@
+{
+  "maquinas": [
+    {
+      "nombre": "Bicicleta Estática",
+      "descripcion": "Anímate a pedalear en las nuevas bicicletas, muy cómodas.",
+      "imagen": "./Imagenes-Maquinas/Bicicleta_Estatica.png",
+      "disponibilidad": "Plazas limitadas",
+      "enlace": "#"
+    },
+    {
+      "nombre": "Cinta de correr",
+      "descripcion": "Regulable en altura, velocidad y hasta con pantallita.",
+      "imagen": "./Imagenes-Maquinas/Cinta_Correr.jpg",
+      "disponibilidad": "Consulte horario y disponibilidad.",
+      "enlace": "#"
+    },
+    {
+      "nombre": "Poleas eléctricas",
+      "descripcion": "Regulable en altura, fuerza y resistencia.",
+      "imagen": "./Imagenes-Maquinas/Poleas_Electro.jpg",
+      "disponibilidad": "Consulte plazas y condiciones.",
+      "enlace": "#"
+    }
+  ]
+}

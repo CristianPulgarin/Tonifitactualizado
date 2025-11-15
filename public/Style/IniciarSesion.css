@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#im{
+background-image: url(../../public/login-imagenes/fondoLogin.jpg);
+}

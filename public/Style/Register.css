@@ -1,0 +1,96 @@
+/* Fondo */
+.register-bg {
+  min-height: 100vh;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background: url("../../public/login-imagenes/fondoLogin.jpg") center/cover no-repeat;
+}
+
+/* Contenedor */
+.register-container {
+    margin-top: 20px;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(6px);
+  padding: 30px 50px;
+  width: 660px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Título */
+.register-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e90ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.register-label {
+  display: block;
+  color: #fff;
+  font-size: 1.05rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.register-input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 15px;
+  background: #1c1c1c;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.register-input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.4);
+  outline: none;
+}
+
+/* Select */
+.register-select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 15px;
+  background: #1c1c1c;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.register-select:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.4);
+  outline: none;
+}
+
+/* Botón */
+.register-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #1e90ff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.register-button:hover {
+  background: #0f6fd6;
+  transform: scale(1.03);
+}

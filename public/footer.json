@@ -1,0 +1,62 @@
+{
+  "footer": {
+    "logo": {
+      "src": "./Tonifit.png",
+      "alt": "Tonifit"
+    },
+    "copyright": "Cristian y Kevin",
+    "secciones": [
+      {
+        "titulo": "Páginas Principales",
+        "links": [
+          {
+            "nombre": "Inicio",
+            "link": "/"
+          },
+          {
+            "nombre": "Iniciar Sesión",
+            "link": "/iniciar-sesion"
+          },
+          {
+            "nombre": "Crear cuenta",
+            "link": "/crear-cuenta"
+          },
+          {
+            "nombre": "Tarifas",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "titulo": "Cursos",
+        "links": [
+          {
+            "nombre": "Esgrima",
+            "link": "/cursos-disponibles/esgrima"
+          },
+          {
+            "nombre": "Natación",
+            "link": "/cursos-disponibles/natación"
+          },
+          {
+            "nombre": "Boxeo",
+            "link": "/cursos-disponibles/boxeo"
+          },
+          {
+            "nombre": "Karate",
+            "link": "/cursos-disponibles/karate"
+          }
+        ]
+      },
+      {
+        "titulo": "Máquinas",
+        "links": [
+          {
+            "nombre": "Máquinas",
+            "link": "/maquinas-disponibles"
+          }
+        ]
+      }
+    ]
+  }
+}

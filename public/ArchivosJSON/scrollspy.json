@@ -1,0 +1,26 @@
+{
+    "maquinas": [
+      {
+        "id": "bicicleta",
+        "titulo": "NUEVO Bicicletas",
+        "imagen": "./Imagenes-Maquinas/Bicicleta_Estatica.png",
+        "subtitulo": "SMART CYCLE Turbo boost",
+        "descripcion": "Nuevas bicicletas de última generación con termorregulación y electrocalefactables preparadas para largas jornadas intensivas. Disfruta de ellas desde hoy mismo, recién instaladas."
+      },
+      {
+        "id": "poleas",
+        "titulo": "Poleas Magnéticas",
+        "imagen": "./Imagenes-Maquinas/Poleas_Electro.jpg",
+        "subtitulo": "Poleas Electroestáticas",
+        "descripcion": "Mediante sistemas electromagnéticos, puedes regular la resistencia desde tu móvil. Incluyen agarraderas intercambiables y un temporizador para calcular sesiones y series."
+      },
+      {
+        "id": "cinta-correr",
+        "titulo": "Cinta de Correr",
+        "imagen": "./Imagenes-Maquinas/Cinta_Correr.jpg",
+        "subtitulo": "Smart Dynamic Roll",
+        "descripcion": "Regulable en base, potencia y resistencia. A través de la pantalla puedes ver servicios de streaming para acompañar tus entrenamientos."
+      }
+    ]
+  }
+  
